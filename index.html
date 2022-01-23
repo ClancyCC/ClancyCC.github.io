@@ -10,7 +10,7 @@
   root: '/',
   algolia: undefined,
   localSearch: undefined,
-  translate: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
   noticeOutdate: undefined,
   highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
   copy: {
@@ -48,7 +48,7 @@
   isHome: true,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2022-01-23 17:52:59'
+  postUpdate: '2022-01-23 22:11:49'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -137,36 +137,198 @@
       }
     }
     detectApple()
-    })(window)</script><meta name="generator" content="Hexo 6.0.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/JLLJ.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">3</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">1</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/Home/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">欢迎来到ClancyCC的博客!</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/Home/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/2022/01/22/1-8%E7%BB%AA%E8%AE%BA/" title="1/8 绪论"><img class="post_bg" src="/2022/01/22/1-8%E7%BB%AA%E8%AE%BA/Untitled.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="1/8 绪论"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/01/22/1-8%E7%BB%AA%E8%AE%BA/" title="1/8 绪论">1/8 绪论</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-01-22T12:19:59.000Z" title="Created 2022-01-22 14:19:59">2022-01-22</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E3%80%8A%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E3%80%8B/">《数据结构与算法》</a></span></div><div class="content">1.1 数据结构的研究内容：数据结构是一门研究非数值计算的程序设计中计算机的操作对象以及他们之间的关系和操作的学科。
-人事管理系统：增、删、改、查、排序，线性关系
-人机对弈问题、文件系统的系统结构图：树形结构
-最短路径：网状结构
-
-1.2 基本概念和术语：
-数据data ≥数据对象&gt;数据元素data element（数值型，非数值型）&gt;数据项data item
-一个学生信息表可称为数据，里面一个学生可以看作一个数据元素，一个学生有姓名性别学号等多个数据项，其中所有男生可以组成一个数据对象
-数据结构data structure =逻辑结构+储存结构+数据的运算和实现（增、删、改、查、 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/01/22/2-8%E7%BA%BF%E6%80%A7%E8%A1%A8%EF%BC%88%E4%B8%8A%EF%BC%89/" title="2/8 线性表（上）"><img class="post_bg" src="/2022/01/22/2-8%E7%BA%BF%E6%80%A7%E8%A1%A8%EF%BC%88%E4%B8%8A%EF%BC%89/Untitled.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2/8 线性表（上）"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/01/22/2-8%E7%BA%BF%E6%80%A7%E8%A1%A8%EF%BC%88%E4%B8%8A%EF%BC%89/" title="2/8 线性表（上）">2/8 线性表（上）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-01-22T12:19:59.000Z" title="Created 2022-01-22 14:19:59">2022-01-22</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E3%80%8A%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E3%80%8B/">《数据结构与算法》</a></span></div><div class="content">2.1 线性表的定义和特点线性表(Linear List)是具有相同特性的数据元素的一个有限序列
-同一线性表中的元素必具有相同的特征，且互为线性关系
-有且仅有一个开始结点、一个终端结点，内部结点均有且仅有一个直接前趋和一个直接后继
-
-2.2 案例引入
-多项式可以用数组的形式来表示，但对于稀疏多项式将会造成存储空间很大的浪费，可以每一条元素记录多个数据项
-顺序存储结构存在问题：存储空间分配不灵活，运算的空间复杂度高
-此处对于多项式的加法可以采用链式结构
-
-
-
-选择适当的存储结构，实现此存储结构上的基本操作并利用基本操作完成功能
-线性表中数据元素的类型可以是简单类型，也可以是复杂类型
-基本操作有很 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/01/17/hello-world/" title="Hello World">Hello World</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-01-17T15:58:57.609Z" title="Created 2022-01-17 17:58:57">2022-01-17</time></span></div><div class="content">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+    })(window)</script><meta name="generator" content="Hexo 6.0.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/JLLJ.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">13</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">1</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/Home/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">欢迎来到ClancyCC的博客!</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/Home/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/01/17/hello-world/" title="Hello World">Hello World</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-01-17T15:58:57.609Z" title="Created 2022-01-17 17:58:57">2022-01-17</time></span></div><div class="content">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
 Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;
 
 More info: Writing
-Run server1$ hexo ser ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/JLLJ.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">ClancyCC</div><div class="author-info__description"></div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">3</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">1</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/ClancyCC" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://www.zhihu.com/people/zhu-qing-cheng" target="_blank" title="zhihu"><i class="fab fa-zhihu"></i></a><a class="social-icon" href="mailto:zqc867342167@gmail.com" target="_blank" title="Email:zqc867342167@gmail.com"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/01/22/1-8%E7%BB%AA%E8%AE%BA/" title="1/8 绪论"><img src="/2022/01/22/1-8%E7%BB%AA%E8%AE%BA/Untitled.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="1/8 绪论"/></a><div class="content"><a class="title" href="/2022/01/22/1-8%E7%BB%AA%E8%AE%BA/" title="1/8 绪论">1/8 绪论</a><time datetime="2022-01-22T12:19:59.000Z" title="Created 2022-01-22 14:19:59">2022-01-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/01/22/2-8%E7%BA%BF%E6%80%A7%E8%A1%A8%EF%BC%88%E4%B8%8A%EF%BC%89/" title="2/8 线性表（上）"><img src="/2022/01/22/2-8%E7%BA%BF%E6%80%A7%E8%A1%A8%EF%BC%88%E4%B8%8A%EF%BC%89/Untitled.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2/8 线性表（上）"/></a><div class="content"><a class="title" href="/2022/01/22/2-8%E7%BA%BF%E6%80%A7%E8%A1%A8%EF%BC%88%E4%B8%8A%EF%BC%89/" title="2/8 线性表（上）">2/8 线性表（上）</a><time datetime="2022-01-22T12:19:59.000Z" title="Created 2022-01-22 14:19:59">2022-01-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/01/17/hello-world/" title="Hello World">Hello World</a><time datetime="2022-01-17T15:58:57.609Z" title="Created 2022-01-17 17:58:57">2022-01-17</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+Run server1$ hexo ser ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/01/06/8-8%E6%8E%92%E5%BA%8F/" title="8/8 排序"><img class="post_bg" src="/2022/01/06/8-8%E6%8E%92%E5%BA%8F/Untitled.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="8/8 排序"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/01/06/8-8%E6%8E%92%E5%BA%8F/" title="8/8 排序">8/8 排序</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-01-06T12:38:00.000Z" title="Created 2022-01-06 14:38:00">2022-01-06</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E3%80%8A%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E3%80%8B/">《数据结构与算法》</a></span></div><div class="content">8.1 基本概念
+
+自然排序：输入数据越有序，排序的速度越快的排序方法。内存排序：排序时只用到内存没有用到外存串行排序：单个处理器，而非多个同时进行比较排序：用比较的方法
+
+8.2 插入排序
+8.2.1 直接插入排序
+
+
+8.2.2 二分插入排序
+
+
+8.2.3 希尔排序：不稳定
+
+
+8.3 交换排序8.3.1 冒泡排序
+n个记录，总共需要n-1趟第m趟需要比较n-m次
+
+
+小改进，如果某一趟没有发生交换，说明已经排序完毕。
+
+8.3.2 快速排序
+升级快速排序：不用单独开辟存放子表的空间，但是因为递归需要建立栈①每一趟的子表的形成是采用从两头向中间交替式逼近法;②由于每趟中对各子表的操作都相 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/01/05/7-8%E6%9F%A5%E6%89%BE/" title="7/8 查找"><img class="post_bg" src="/2022/01/05/7-8%E6%9F%A5%E6%89%BE/Untitled.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="7/8 查找"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/01/05/7-8%E6%9F%A5%E6%89%BE/" title="7/8 查找">7/8 查找</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-01-05T10:41:00.000Z" title="Created 2022-01-05 12:41:00">2022-01-05</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E3%80%8A%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E3%80%8B/">《数据结构与算法》</a></span></div><div class="content">
+7.1 查找的基本概念查找表是由同一类型的数据元素（或记录）构成的集合。由于“集合”中的数据元素之间存在着松散的关系，因此查找表是一种应用灵便的结构。
+查找：根据给定的某个值，在查找表中确定一个其关键字等于给定值的数据元素或(记录)
+
+
+
+7.2 线性表的查找7.2.1 顺序查找
+
+
+
+时间复杂度:O(n)查找成功时的平均查找长度,设表中各记录查找概率相等ASL.(n)=(1+2+…. +n)/n =(n+1)/2空间复杂度:一个辅助空间——O(1);
+1、记录的查找概率不相等时如何提高查找效率?查找表存储记录原则——按查找概率高低存储:
+
+1)查找概率越高，比较次数越少;2)查找概率越低， ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/01/03/6-8%E5%9B%BE%EF%BC%88%E4%B8%8B%EF%BC%89/" title="6/8 图（下）"><img class="post_bg" src="/2022/01/03/6-8%E5%9B%BE%EF%BC%88%E4%B8%8B%EF%BC%89/Untitled.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="6/8 图（下）"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/01/03/6-8%E5%9B%BE%EF%BC%88%E4%B8%8B%EF%BC%89/" title="6/8 图（下）">6/8 图（下）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-01-03T21:44:00.000Z" title="Created 2022-01-03 23:44:00">2022-01-03</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E3%80%8A%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E3%80%8B/">《数据结构与算法》</a></span></div><div class="content">6.5 图的遍历从已给的连通图中某一顶点出发，沿着一些边访遍图中所有的顶点，且使每个顶点仅被访问一次，就叫做图的遍历，它是图的基本运算。
+
+
+6.5.1 深度优先遍历DFS：一条道走到黑，不行再退回
+
+
+
+如果对非连通图进行深度优先遍历，只需要在遍历某一个连通分量后，在没有访问的结点任取一个开始遍历即可。
+
+6.5.2 广度优先遍历BFS
+
+利用一个队列，从起点开始，每次出队时，把出队元素所有未访问过的邻接点加入队列，直到队列为空。（其实DFS的递归也同样利用了栈）
+
+
+
+6.6 图的应用最小生成树Minimum Spanning Tree
+
+最小生成树:给定一个无向网络在该网的所有生成树中， ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/01/01/6-8%E5%9B%BE%EF%BC%88%E4%B8%8A%EF%BC%89/" title="6/8 图（上）"><img class="post_bg" src="/2022/01/01/6-8%E5%9B%BE%EF%BC%88%E4%B8%8A%EF%BC%89/Untitled.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="6/8 图（上）"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/01/01/6-8%E5%9B%BE%EF%BC%88%E4%B8%8A%EF%BC%89/" title="6/8 图（上）">6/8 图（上）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-01-01T21:36:00.000Z" title="Created 2022-01-01 23:36:00">2022-01-01</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E3%80%8A%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E3%80%8B/">《数据结构与算法》</a></span></div><div class="content">6.1 图的定义和基本术语
+
+
+**稀疏图:**有很少边或弧的图(e&lt;nlogn) 。记为TD(v)稠密图:有较多边或弧的图。
+
+**网:**边/弧带权的图。**邻接:**有边/弧相连的两个顶点之间的关系。(圆括号表示无序，尖括号表示有序)存在(v_i, v_j)，则称vi和vj互为邻接点;存在&lt;v_i; v_j&gt;，则称vi邻接到vj,vj邻接于vi
+**关联(依附):**边/弧与顶点之间的关系。存在(v, v)/，则称该边/弧关联于v,和vj
+
+
+当有向图中仅1个顶点的入度为0,其余顶点的入度均为1，此时称其为有向树。
+
+
+
+
+
+
+6.3 图的类型定义
+
+6.4 图的存储结 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2021/12/28/5-8%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91%EF%BC%88%E4%B8%8B%EF%BC%89/" title="5/8 树和二叉树（下）"><img class="post_bg" src="/2021/12/28/5-8%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91%EF%BC%88%E4%B8%8B%EF%BC%89/Untitled.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="5/8 树和二叉树（下）"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/12/28/5-8%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91%EF%BC%88%E4%B8%8B%EF%BC%89/" title="5/8 树和二叉树（下）">5/8 树和二叉树（下）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-12-28T13:10:00.000Z" title="Created 2021-12-28 15:10:00">2021-12-28</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E3%80%8A%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E3%80%8B/">《数据结构与算法》</a></span></div><div class="content">5.6 树和森林
+5.6.1 树的存储结构
+
+
+
+结合起来：
+
+
+5.6.2 树和二叉树的转换由子树和二叉树都可以用二叉链表作存储结构，则以二叉链表作媒介可以导出树与二叉树之间的一个对应关系。给定一棵树，可以找到唯一的一棵二叉树与之对应。
+
+
+
+5.6.3 森林和二叉树的转换
+
+5.6.4 树和森林的遍历
+
+5.7 哈夫曼树（最优二叉树）Huffman Tree
+
+5.7.1 哈夫曼树的基本概念
+
+
+
+
+满二叉树不一定是哈夫曼树
+权值越大的叶子距离根节点越近
+具有相同带权结点的哈夫曼树不唯一
+
+5.7.2 哈夫曼树的构造算法因为哈夫曼树中权越大的叶子离根越近，所以采用贪心算法，即构造时首先选择 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2021/12/27/5-8%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91%EF%BC%88%E4%B8%8A%EF%BC%89/" title="5/8 树和二叉树（上）"><img class="post_bg" src="/2021/12/27/5-8%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91%EF%BC%88%E4%B8%8A%EF%BC%89/Untitled.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="5/8 树和二叉树（上）"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/12/27/5-8%E6%A0%91%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91%EF%BC%88%E4%B8%8A%EF%BC%89/" title="5/8 树和二叉树（上）">5/8 树和二叉树（上）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-12-27T08:29:00.000Z" title="Created 2021-12-27 10:29:00">2021-12-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E3%80%8A%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E3%80%8B/">《数据结构与算法》</a></span></div><div class="content">5.1 树形结构
+
+
+
+为何要重点研究每结点最多只有两个“叉”的树?√二叉树的结构最简单，规律性最强;√可以证明，所有树都能转为唯一对应的二叉树，不失一般性。
+二叉树是n (n≥0)个结点的有限集，它或者是空集(n = 0)，或者由一个根结点及两棵互不相交的分别称作这个根的左子树和右子树的二叉树组成。
+特点：1、每个结点最多有俩孩子(二叉树中不存在度大于2的结点)。2、子树有左右之分，其次序不能颠倒。3、二叉树可以是空集合，根订以有空的左子树或空的右子树。
+二叉树不是树的特殊情况，二叉树结点的字数要区分左子树和右子树，即使只有一个子结点
+
+
+5.2 案例引入
+
+5.3 树和二叉树的抽象数据类型 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2021/12/26/4-8%E4%B8%B2%E3%80%81%E6%95%B0%E7%BB%84%E5%92%8C%E5%B9%BF%E4%B9%89%E8%A1%A8/" title="4/8 串、数组和广义表"><img class="post_bg" src="/2021/12/26/4-8%E4%B8%B2%E3%80%81%E6%95%B0%E7%BB%84%E5%92%8C%E5%B9%BF%E4%B9%89%E8%A1%A8/Untitled.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="4/8 串、数组和广义表"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/12/26/4-8%E4%B8%B2%E3%80%81%E6%95%B0%E7%BB%84%E5%92%8C%E5%B9%BF%E4%B9%89%E8%A1%A8/" title="4/8 串、数组和广义表">4/8 串、数组和广义表</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-12-26T08:45:00.000Z" title="Created 2021-12-26 10:45:00">2021-12-26</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E3%80%8A%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E3%80%8B/">《数据结构与算法》</a></span></div><div class="content">4.1 串：内容受限的线性表
+串（String）——零个或多个任意字符组成的有限序列
+
+
+
+4.1.1串的顺序存储结构（更常用）
+4.1.2串的链式存储结构——块链结构
+
+4.1.4 串的模式匹配算法
+目的：确定主串中所含子串第一次出现的位置
+
+Brute—Force算法，亦称简单匹配算法：穷举
+BF算法的时间复杂度最好的情况是比较m次，最差为(n-m+1)*m次，效率低
+
+KMP算法设计思想
+此时主串的指针i不必回溯！
+假设某时刻已经比较到子串的前(j-1)位和主串第i位前面的(j-1)位已经相等了，但是i，j本身不相等；
+此时寻找主串第i位前面有没有(k-1)位和子串从头开始的前(k-1) ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2021/12/21/3-8%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/" title="3/8 栈和队列"><img class="post_bg" src="/2021/12/21/3-8%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/Untitled.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="3/8 栈和队列"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/12/21/3-8%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/" title="3/8 栈和队列">3/8 栈和队列</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-12-21T19:50:00.000Z" title="Created 2021-12-21 21:50:00">2021-12-21</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E3%80%8A%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E3%80%8B/">《数据结构与算法》</a></span></div><div class="content">3.1 栈和队列的定义和特点
+栈和队列是限定插入和删除只能在表的端点进行的线性表，是线性表的子集
+
+3.1.1 栈：Stack栈就像手电筒装电池、手枪弹夹里装子弹：有后进先出（Last In First Out）的特性
+
+栈是仅在表尾进行插入删除操作的线性表，简称LIFO结构
+它与一般线性表的区别：仅在于运算规则不同
+
+
+
+案例1：进制转换
+
+
+
+括号匹配的检验
+
+
+
+表达式求值
+
+
+3.1.2 队列Queue队列就像排队，有先进先出（First In First Out）的特性，插入仅在表尾，删除仅在表头  
+
+舞伴问题
+
+
+3.3 栈的定义和实现：顺序栈和链栈
+
+3.3.2 顺序栈的实现
+ ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2021/12/16/2-8%E7%BA%BF%E6%80%A7%E8%A1%A8%EF%BC%88%E4%B8%8B%EF%BC%89/" title="2/8 线性表（下）"><img class="post_bg" src="/2021/12/16/2-8%E7%BA%BF%E6%80%A7%E8%A1%A8%EF%BC%88%E4%B8%8B%EF%BC%89/Untitled.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2/8 线性表（下）"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/12/16/2-8%E7%BA%BF%E6%80%A7%E8%A1%A8%EF%BC%88%E4%B8%8B%EF%BC%89/" title="2/8 线性表（下）">2/8 线性表（下）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-12-16T21:16:00.000Z" title="Created 2021-12-16 23:16:00">2021-12-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E3%80%8A%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E3%80%8B/">《数据结构与算法》</a></span></div><div class="content">2.5 线性表的链式表示和实现2.5.3 下面介绍循环链表：最大的优点是：从表中任一结点出发均可找到表中其他结点
+
+
+终止条件： 判断指针是否等于头指针
+
+对循环链表进行优化，更方便寻找首尾位置
+
+两个带尾指针的循环链表的合并：时间复杂度是O(1)
+
+2.5.4 下面介绍双向链表：
+双向列表中仅插入和删除时，因为需要同时修改两个方向上的指针，两者的操作时间复杂度均为O(n)。和单链略有不同。
+
+双向链表的插入：
+
+
+
+双向列表的删除，仅删除O(1)，但是查找O(n)
+
+
+2.5.5 链表的比较
+2.6 顺序表和链表的比较
+
+2.7 线性表的应用
+
+2.8 顺序表和链表的应用
+多项式相加适合用顺 ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/JLLJ.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">ClancyCC</div><div class="author-info__description">很高兴遇到你！</div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">13</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">1</div></a></div></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/ClancyCC" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://www.zhihu.com/people/zhu-qing-cheng" target="_blank" title="zhihu"><i class="fab fa-zhihu"></i></a><a class="social-icon" href="mailto:zqc867342167@gmail.com" target="_blank" title="Email:zqc867342167@gmail.com"><i class="fas fa-envelope"></i></a></div></div><div class="sticky_layout"><div class="card-widget card-categories"><div class="item-headline">
             <i class="fas fa-folder-open"></i>
             <span>Categories</span>
             
             </div>
             <ul class="card-category-list" id="aside-cat-list">
-            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E3%80%8A%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E3%80%8B/"><span class="card-category-list-name">《数据结构与算法》</span><span class="card-category-list-count">2</span></a></li>
-            </ul></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/01/"><span class="card-archive-list-date">January 2022</span><span class="card-archive-list-count">3</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">3</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2022-01-23T15:52:59.581Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By ClancyCC</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E3%80%8A%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E3%80%8B/"><span class="card-category-list-name">《数据结构与算法》</span><span class="card-category-list-count">12</span></a></li>
+            </ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">13</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2022-01-23T20:11:49.073Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 By ClancyCC</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="Switch Between Traditional Chinese And Simplified Chinese">繁</button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"></div><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = false;
+POWERMODE.shake = false;
+POWERMODE.mobile = true;
+document.body.addEventListener('input', POWERMODE);
+</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

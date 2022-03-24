@@ -142,29 +142,29 @@
     }
     detectApple()
     })(window)</script><link rel="stylesheet" href="/css/modify.css"><meta name="generator" content="Hexo 6.0.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/JLLJ.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">23</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fas fa-comment"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/2021/12/16/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/2-8%E7%BA%BF%E6%80%A7%E8%A1%A8%EF%BC%88%E4%B8%8B%EF%BC%89/Untitled.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">ClancyCC</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fas fa-comment"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">2/8 线性表（下）</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-12-16T15:16:00.000Z" title="发表于 2021-12-16 23:16:00">2021-12-16</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-01-23T19:31:30.728Z" title="更新于 2022-01-24 03:31:30">2022-01-24</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E3%80%8A%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E3%80%8B/">《数据结构与算法》</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="2/8 线性表（下）"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="2-5-线性表的链式表示和实现"><a href="#2-5-线性表的链式表示和实现" class="headerlink" title="2.5 线性表的链式表示和实现"></a>2.5 线性表的链式表示和实现</h1><h2 id="2-5-3-下面介绍循环链表："><a href="#2-5-3-下面介绍循环链表：" class="headerlink" title="2.5.3 下面介绍循环链表："></a>2.5.3 下面介绍循环链表：</h2><p><strong>最大的优点</strong>是：从表中任一结点出发均可找到表中其他结点</p>
-<p><img src="Untitled.png"></p>
+<p><img src="Untitled.png" alt=""></p>
 <ul>
 <li>终止条件： 判断指针是否等于头指针</li>
 </ul>
 <p>对循环链表进行优化，更方便寻找首尾位置</p>
-<p><img src="Untitled%201.png"></p>
+<p><img src="Untitled%201.png" alt=""></p>
 <p>两个带尾指针的循环链表的合并：时间复杂度是O(1)</p>
-<p><img src="Untitled%202.png"></p>
-<h2 id="2-5-4-下面介绍双向链表："><a href="#2-5-4-下面介绍双向链表：" class="headerlink" title="2.5.4 下面介绍双向链表："></a>2.5.4 下面介绍双向链表：</h2><p><img src="Untitled%203.png"></p>
+<p><img src="Untitled%202.png" alt=""></p>
+<h2 id="2-5-4-下面介绍双向链表："><a href="#2-5-4-下面介绍双向链表：" class="headerlink" title="2.5.4 下面介绍双向链表："></a>2.5.4 下面介绍双向链表：</h2><p><img src="Untitled%203.png" alt=""></p>
 <p>双向列表中仅插入和删除时，因为需要同时修改两个方向上的指针，两者的操作时间复杂度均为O(n)。和单链略有不同。</p>
 <ul>
 <li>双向链表的插入：</li>
 </ul>
-<p><img src="Untitled%204.png"></p>
+<p><img src="Untitled%204.png" alt=""></p>
 <ul>
 <li>双向列表的删除，仅删除O(1)，但是查找O(n)</li>
 </ul>
-<p><img src="Untitled%205.png"></p>
-<h2 id="2-5-5-链表的比较"><a href="#2-5-5-链表的比较" class="headerlink" title="2.5.5 链表的比较"></a>2.5.5 链表的比较</h2><p><img src="Untitled%206.png"></p>
-<h1 id="2-6-顺序表和链表的比较"><a href="#2-6-顺序表和链表的比较" class="headerlink" title="2.6 顺序表和链表的比较"></a>2.6 顺序表和链表的比较</h1><p><img src="Untitled%207.png"></p>
-<p><img src="Untitled%208.png"></p>
-<h1 id="2-7-线性表的应用"><a href="#2-7-线性表的应用" class="headerlink" title="2.7 线性表的应用"></a>2.7 线性表的应用</h1><p><img src="Untitled%209.png"></p>
-<p><img src="Untitled%2010.png"></p>
+<p><img src="Untitled%205.png" alt=""></p>
+<h2 id="2-5-5-链表的比较"><a href="#2-5-5-链表的比较" class="headerlink" title="2.5.5 链表的比较"></a>2.5.5 链表的比较</h2><p><img src="Untitled%206.png" alt=""></p>
+<h1 id="2-6-顺序表和链表的比较"><a href="#2-6-顺序表和链表的比较" class="headerlink" title="2.6 顺序表和链表的比较"></a>2.6 顺序表和链表的比较</h1><p><img src="Untitled%207.png" alt=""></p>
+<p><img src="Untitled%208.png" alt=""></p>
+<h1 id="2-7-线性表的应用"><a href="#2-7-线性表的应用" class="headerlink" title="2.7 线性表的应用"></a>2.7 线性表的应用</h1><p><img src="Untitled%209.png" alt=""></p>
+<p><img src="Untitled%2010.png" alt=""></p>
 <h1 id="2-8-顺序表和链表的应用"><a href="#2-8-顺序表和链表的应用" class="headerlink" title="2.8 顺序表和链表的应用"></a>2.8 顺序表和链表的应用</h1><ul>
 <li>多项式相加适合用顺序表</li>
 <li>稀疏多项式适合用链表</li>

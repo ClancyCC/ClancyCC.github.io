@@ -1,11 +1,4 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><!-- hexo injector head_begin start -->
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker
-      .register('sw.js')
-      .then((res) => console.log('注册sw成功'))
-      .catch(() => console.log('注册sw失败'))
-  }
-  <!-- hexo injector head_begin end --><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Hexo框架的搭建 | ClancyCC</title><meta name="author" content="ClancyCC"><meta name="copyright" content="ClancyCC"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="因为最近在我的闲鱼平台帮助别人远程安装hexo博客框架，弄了几次下来觉得还是自己吧这个过程写下来比较好。 先声明，下文中nodejs的安装路径为D:\Nodejs，所有博客文件放在D:\Blog，github的用户名是MYNAME123，注册邮箱是you@example.com。 nodejs和git的安装 nodejs下载网址：https:&#x2F;&#x2F;nodejs.org&#x2F;zh-cn&#x2F;download&#x2F;">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Hexo框架的搭建 | ClancyCC</title><meta name="author" content="ClancyCC"><meta name="copyright" content="ClancyCC"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="因为最近在我的闲鱼平台帮助别人远程安装hexo博客框架，弄了几次下来觉得还是自己吧这个过程写下来比较好。 先声明，下文中nodejs的安装路径为D:\Nodejs，所有博客文件放在D:\Blog，github的用户名是MYNAME123，注册邮箱是you@example.com。 nodejs和git的安装 nodejs下载网址：https:&#x2F;&#x2F;nodejs.org&#x2F;zh-cn&#x2F;download&#x2F;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo框架的搭建">
 <meta property="og:url" content="https://clancycc.github.io/2022/04/14/%E6%8A%80%E6%9C%AF%E4%B8%8E%E6%8A%80%E5%B7%A7/hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA/index.html">

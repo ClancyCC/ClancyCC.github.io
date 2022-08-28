@@ -1,0 +1,51 @@
+- class_name: 友情链接
+  class_desc: 来认识我的朋友们吧！
+  link_list:
+    - name: 站主ClancyCC
+      link: https://clancycc.github.io
+      avatar: https://clancycc.github.io/img/JLLJ.jpg
+      descr: 要热爱生活啊！
+      siteshot: 
+
+    - name: Butterfly官方
+      link: https://butterfly.js.org/
+      avatar: https://butterfly.js.org/img/avatar.png
+      descr: 🦋Butterfly作者
+      siteshot: 
+
+    - name: HZ's blogs
+      link: https://imzhangjinming.github.io/
+      avatar: https://avatars.githubusercontent.com/u/60952516?v=4
+      # avatar: https://imzhangjinming.github.io/images/IMG_5987.JPG
+      descr: 我的大佬朋友！
+      siteshot:
+
+    - name: 今年勇
+      link: https://www.jnylife.com/
+      avatar: https://cdn.jsdelivr.net/gh/jnylife/ImgHosting/img/202111211239487.gif
+      descr: 期待您的光临！
+      siteshot: https://cdn.jsdelivr.net/gh/jnylife/ImgHosting//img/202112031154613.png
+
+    - name: Android
+      link: https://android99.me
+      avatar: https://android99.me/img/avatar.png
+      descr: 矩阵
+
+    # - name: 还施水阁
+    #   link: https://lyd122504.github.io/
+    #   avatar: https://lyd122504.github.io/images/liyaoda.jfif
+    #   descr: Li Yaoda
+
+- class_name: 优质工具
+  class_desc:
+  link_list:
+    - name: Copytranslator
+      link: https://copytranslator.github.io/
+      avatar: https://copytranslator.github.io/icon.png
+      descr: 桌面翻译/论文阅读神器！
+      siteshot: 
+    - name: Caesium
+      link: https://saerasoft.com/caesium/
+      avatar: https://saerasoft.com/images/logo.png
+      descr: 压缩图片神器！
+      siteshot: 

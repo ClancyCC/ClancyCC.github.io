@@ -1,0 +1,51 @@
+@import 'nib'
+
+// 顶部图
+#page-header
+  &, &:before
+    background: transparent !important
+  &.post-bg, &.not-home-page
+    height: 14rem !important
+  #post-info
+    bottom: 2rem !important
+  #page-site-info
+    top: 7rem !important
+
+  @media screen and (max-width: 768px)
+    &.not-home-page
+      height: 10rem !important
+    #post-info
+      bottom: 0.5rem !important
+    #page-site-info
+      top: 5rem !important
+
+.top-img
+  height: 12.5rem
+  margin: -50px -40px 50px
+  border-top-left-radius: inherit
+  border-top-right-radius: inherit
+  background-position: center center
+  background-size: cover
+  background-repeat: no-repeat
+  transition: all 0.3s
+
+  @media screen and (max-width: 768px)
+    height: 230px
+    margin: -1.8rem -0.7rem 1.8rem
+
+  [data-theme='dark'] &
+    filter: brightness(0.8)
+
+// 页脚
+#footer:before
+  background-color: alpha(#FFF, .5)
+
+  [data-theme='dark'] &
+    background-color: alpha(#000, .5)
+
+#footer-wrap, #footer-wrap a
+  color: #111
+  transition: unset
+
+  [data-theme='dark'] &
+    color: var(--light-grey)

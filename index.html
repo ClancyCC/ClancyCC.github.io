@@ -1,0 +1,359 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><!-- hexo injector head_begin start -->
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+      .register('sw.js')
+      .then((res) => console.log('注册sw成功'))
+      .catch(() => console.log('注册sw失败'))
+  }
+  <!-- hexo injector head_begin end --><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>ClancyCC</title><meta name="author" content="ClancyCC"><meta name="copyright" content="ClancyCC"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="ClancyCC">
+<meta property="og:url" content="https://clancycc.github.io/index.html">
+<meta property="og:site_name" content="ClancyCC">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://clancycc.github.io/img/JLLJ.jpg">
+<meta property="article:author" content="ClancyCC">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://clancycc.github.io/img/JLLJ.jpg"><link rel="shortcut icon" href="/img/icon_JLLJ.png"><link rel="canonical" href="https://clancycc.github.io/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="9eU0cX-hA0E9CraoJpb6hliI6Aju-pcMWbF9MsmCyaw"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="/pluginsSrc/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="/pluginsSrc/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: '/pluginsSrc/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: '/pluginsSrc/flickr-justified-gallery/dist/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'ClancyCC',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-08-30 10:52:12'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/modify.css"><link rel="service workers_delete" href="/js/sw_delete.js"><meta name="generator" content="Hexo 6.0.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/JLLJ.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">44</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fas fa-comment"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/img/%E5%8D%97%E8%88%AA%E5%9B%9B%E5%AD%A3.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">ClancyCC</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fas fa-comment"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">ClancyCC</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/ClancyCC" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://www.zhihu.com/people/zhu-qing-cheng" target="_blank" title="zhihu"><i class="fab fa-zhihu"></i></a><a class="social-icon" href="mailto:zqc867342167@gmail.com" target="_blank" title="Email:zqc867342167@gmail.com"><i class="fas fa-envelope"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/2022/07/16/%E5%8A%A8%E6%89%8B%E5%AD%A6%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/gpu%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/" title="gpu的安装和使用"><img class="post_bg" src="/img/DIVE%20INTO%20DEEP%20LEARNING.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="gpu的安装和使用"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/07/16/%E5%8A%A8%E6%89%8B%E5%AD%A6%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/gpu%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/" title="gpu的安装和使用">gpu的安装和使用</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-07-16T11:18:00.000Z" title="发表于 2022-07-16 19:18:00">2022-07-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E3%80%8A%E5%8A%A8%E6%89%8B%E5%AD%A6%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E3%80%8B/">《动手学深度学习》</a></span></div><div class="content">
+本文章基于李沐老师的《动手学深度学习》(pytorch版)，在此学习观礼膜拜。
+课程主页：https://courses.d2l.ai/zh-v2
+教材： https://zh-v2.d2l.ai/
+课程论坛讨论：https://discuss.d2l.ai/c/16Pytorch
+论坛： https://discuss.pytorch.org/
+
+首先为大家贴上关于gpu使用的课程链接：https://www.bilibili.com/video/BV1z5411c7C1?spm_id_from=333.999.0.0
+因为前面李沐的课程安装的时候，使用的是cpu版本的pytorch，所以即使你的电脑有独立GPU的时候，也并不能调用GPU进行计算。我自己看攻略摸索弄了蛮久的，在这里为大家贴上我的安装过程，也是基于李沐课程最快捷的方式。
+查询你的GPU版本以及python相关包的版本
+查询GPU型号和CUDA版本
+zilangch/CSDN：conda换源+查看cuda版本+anaconda一步安装torch和cuda
+为GPU安装合理的驱动，可以从官网下载。这里也有攻略：Win10 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/07/03/%E8%87%AA%E6%8E%A7%E5%8E%9F%E7%90%86/6-6%20%E7%BA%BF%E6%80%A7%E7%A6%BB%E6%95%A3%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%88%86%E6%9E%90/" title="6/6 线性离散系统的分析"><img class="post_bg" src="/img/%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="6/6 线性离散系统的分析"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/07/03/%E8%87%AA%E6%8E%A7%E5%8E%9F%E7%90%86/6-6%20%E7%BA%BF%E6%80%A7%E7%A6%BB%E6%95%A3%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%88%86%E6%9E%90/" title="6/6 线性离散系统的分析">6/6 线性离散系统的分析</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-07-03T08:54:00.000Z" title="发表于 2022-07-03 16:54:00">2022-07-03</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E3%80%8A%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86%E3%80%8B/">《自动控制原理》</a></span></div><div class="content">
+离散系统理论与连续系统理论既有本质的区别,又有极大的相似性。本章的内容就是讨论它们的区别和联系的。本章首先讨论离散信号的数学描述,引入Z变换理论及差分方程,建立线性离散控制系统的数学模型,在此基础上分析离散系统稳定性及计算稳态误差,并分析离散系统的动态性能与数字校正设计。
+
+基本概念
+采样和数控技术在自动控制领域中得到了广泛的应用,其主要原因是采样系统,特别是数字控制系统较之相应的连续系统具有如下的特点:
+(1)由数字计算机构成的数字校正装置,效果比连续式校正装置好,且由软件实现的控制规律易于改变,控制灵活。
+(2)采样信号,特别是数字信号的传递可以有效地抑制噪声,从而提高了系统的抗干扰能力。
+(3)允许采用高灵敏度的控制元件,以提高系统的控制精度。
+(4)可用一台计算机分时控制若干个系统,提高了设备的利用率,经济性好。
+(5)对于具有传输延迟,特别是大延迟的控制系统,可以引入采样的方式稳定。
+由于在离散系统中存在脉冲或数字信号,若仍然沿用连续系统中的拉普拉斯变换方法来建立系统各个环节的传递函数,则在运算过程中会出现复变量s的超越函数。为了克服这个障碍，需要采用Z变换法建立离散系统的 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/07/02/%E5%8A%A8%E6%89%8B%E5%AD%A6%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%8A%A8%E6%89%8B%E5%AD%A6%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A02/" title="动手学深度学习2"><img class="post_bg" src="/img/DIVE%20INTO%20DEEP%20LEARNING.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="动手学深度学习2"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/07/02/%E5%8A%A8%E6%89%8B%E5%AD%A6%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%8A%A8%E6%89%8B%E5%AD%A6%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A02/" title="动手学深度学习2">动手学深度学习2</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-07-02T05:11:00.000Z" title="发表于 2022-07-02 13:11:00">2022-07-02</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E3%80%8A%E5%8A%A8%E6%89%8B%E5%AD%A6%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E3%80%8B/">《动手学深度学习》</a></span></div><div class="content">
+本文章基于李沐老师的《动手学深度学习》(pytorch版)，在此学习观礼膜拜。
+课程主页：https://courses.d2l.ai/zh-v2
+教材： https://zh-v2.d2l.ai/
+课程论坛讨论：https://discuss.d2l.ai/c/16Pytorch
+论坛： https://discuss.pytorch.org/
+
+线性回归
+介绍一些基本元素：
+训练数据集(Training Dataset)、验证数据集(Validation Dataset)、测试数据集(Test Dataset)。这些数据是我们进行线性回归甚至是深度学习的基础。数据集中的每一行数据称作一个样本(sample)，里面帮助预测所用到的数据称为特征(feature)或协变量(convariate)，标注好的对应的目标称为标签(label)或目标(target)。
+由特征x经过网络训练计算可以得到预测结果y^\hat{y}y^​，将其与实际的结果y（标签）相对比，就可以得出运算正确与否。w为权重weight，b为偏置bias。
+y^=w1x1+⋯+wdxd+b=w⊤x+b\hat{y} = ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/06/24/%E8%87%AA%E6%8E%A7%E5%8E%9F%E7%90%86/5-6%20%E7%BA%BF%E6%80%A7%E7%B3%BB%E7%BB%9F%E7%9A%84%E9%A2%91%E5%9F%9F%E5%88%86%E6%9E%90%E6%B3%95%EF%BC%88%E4%B8%8B%EF%BC%89/" title="5/6 线性系统的频域分析法（下）"><img class="post_bg" src="/img/%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="5/6 线性系统的频域分析法（下）"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/06/24/%E8%87%AA%E6%8E%A7%E5%8E%9F%E7%90%86/5-6%20%E7%BA%BF%E6%80%A7%E7%B3%BB%E7%BB%9F%E7%9A%84%E9%A2%91%E5%9F%9F%E5%88%86%E6%9E%90%E6%B3%95%EF%BC%88%E4%B8%8B%EF%BC%89/" title="5/6 线性系统的频域分析法（下）">5/6 线性系统的频域分析法（下）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-06-24T02:28:00.000Z" title="发表于 2022-06-24 10:28:00">2022-06-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E3%80%8A%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86%E3%80%8B/">《自动控制原理》</a></span></div><div class="content">线性系统的稳定性分析
+频率域稳定判据
+推导
+
+
+总结：
+
+对于每一个s，函数F(s)都有唯一的一个值与之对应，称为映射。s平面的曲线也与F(s)平面曲线相对应。
+若s平面的曲线不包围F(s)的零点和极点，则F(s)平面曲线不包围原点，且Гs顺时针时，Г_F也顺时针。
+若s平面的曲线Гs顺时针包围F(s)的Z个零点，Г_F也顺时针包围原点Z次；若s平面的曲线Гs顺时针包围F(s)的P个极点，Г_F则逆时针包围原点P次；重根应重复计算。
+幅值原理。
+
+
+线性系统的开环传递函数是有理分式函数，设
+G(s)H(s)=B(s)A(s)G(s)H(s)=\frac{B(s)}{A(s)}
+G(s)H(s)=A(s)B(s)​
+对应的闭环传递函数为
+Φ(s)=G(s)1+G(s)H(s)=A(s)G(s)A(s)+B(s)\Phi(s)=\frac{G(s)}{1+G(s)H(s)}=\frac{A(s)G(s)}{A(s)+B(s)}
+Φ(s)=1+G(s)H(s)G(s)​=A(s)+B(s)A(s)G(s)​
+取F(s)为以下形式
+F(s)=1+G(s)H(s)=1+B(s)A(s)=A(s) ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/06/21/%E5%8A%A8%E6%89%8B%E5%AD%A6%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%8A%A8%E6%89%8B%E5%AD%A6%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A01/" title="动手学深度学习1"><img class="post_bg" src="/img/DIVE%20INTO%20DEEP%20LEARNING.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="动手学深度学习1"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/06/21/%E5%8A%A8%E6%89%8B%E5%AD%A6%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%8A%A8%E6%89%8B%E5%AD%A6%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A01/" title="动手学深度学习1">动手学深度学习1</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-06-21T14:40:00.000Z" title="发表于 2022-06-21 22:40:00">2022-06-21</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E3%80%8A%E5%8A%A8%E6%89%8B%E5%AD%A6%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E3%80%8B/">《动手学深度学习》</a></span></div><div class="content">
+本文章基于李沐老师的《动手学深度学习》(pytorch版)，在此学习观礼膜拜。
+课程主页：https://courses.d2l.ai/zh-v2
+教材： https://zh-v2.d2l.ai/
+课程论坛讨论：https://discuss.d2l.ai/c/16Pytorch
+论坛： https://discuss.pytorch.org/
+
+深度学习介绍
+
+当前深度学习和机器学习（在数学上的）的可解释性不是很好，更多地将其认定为黑盒，在等待更好的学术进展。
+领域专家是指能为数据科学家辅助提供相关专业知识的人，类似于甲方。
+MxNet下载GPU版本，需要卸载CPU版本。
+数据科学家和AI专家的关系类似于应用和研发，前者转换问题，后者提升精度性能。
+
+环境安装与配置
+本环境的安装共分为以下几步：
+
+
+安装Miniconda并配置好环境变量：去Miniconda官网找到对应版本（我选的是Windows installers中的Python 3.8	Miniconda3 Windows 64-bit），安装推荐教程；
+
+
+下载老师的压缩课件，正常解压压缩包，自选文件路径。最好把文件夹 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/06/18/%E8%87%AA%E6%8E%A7%E5%8E%9F%E7%90%86/5-6%20%E7%BA%BF%E6%80%A7%E7%B3%BB%E7%BB%9F%E7%9A%84%E9%A2%91%E5%9F%9F%E5%88%86%E6%9E%90%E6%B3%95%EF%BC%88%E4%B8%8A%EF%BC%89/" title="5/6 线性系统的频域分析法（上）"><img class="post_bg" src="/img/%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="5/6 线性系统的频域分析法（上）"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/06/18/%E8%87%AA%E6%8E%A7%E5%8E%9F%E7%90%86/5-6%20%E7%BA%BF%E6%80%A7%E7%B3%BB%E7%BB%9F%E7%9A%84%E9%A2%91%E5%9F%9F%E5%88%86%E6%9E%90%E6%B3%95%EF%BC%88%E4%B8%8A%EF%BC%89/" title="5/6 线性系统的频域分析法（上）">5/6 线性系统的频域分析法（上）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-06-18T11:07:00.000Z" title="发表于 2022-06-18 19:07:00">2022-06-18</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E3%80%8A%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86%E3%80%8B/">《自动控制原理》</a></span></div><div class="content">
+本章首先介绍控制系统的频率特性的基本概念，并建立系统频率特性函数，然后研究用伯德图、奈奎斯特图，尼科尔斯图等图解方法来表示频率特性函数。在讨论了各种典型环节和系统的频率特性后，着重研究利用奈奎斯特稳定性判据和对数稳态判据进行系统稳定性能分析。本章还简要分析了开环系统频率特性与闭环系统频率特性的关系，以及它们与系统时域性能指标的关系；介绍了反馈控制系统的频域校正方法。最后，本章以一个高速列车倾斜控制系统为例，用频率法进行了分析和设计。
+
+引言
+本章将研究系统在正弦信号输入下的稳态响应。实验和数学推导都表明，当输入是正弦信号时，线性定常系统的稳态输出也是正弦信号，输出信号的频率与输入信号频率相同，其幅值和相角则是该频率的函数。即输入信号的频率发生变化时，系统稳态响应的幅值和相角变化情况，这也就是系统的频率特性。相应的分析方法，称为系统的频域分析法。主要采用图解。
+与其他方法相比较，频率分析法具有如下特点:
+
+频率特性可以由前述传递函数确定，也可以用实验的方法来确定，对于难以列写微分方程式的元部件或系统，它便于工程上的使用。
+频率响应法借助开环频率特性的图形对系统进行分析，因而具有形象、直 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/06/15/%E8%87%AA%E6%8E%A7%E5%8E%9F%E7%90%86/4-6%20%E7%BA%BF%E6%80%A7%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%A0%B9%E8%BD%A8%E8%BF%B9%E6%B3%95/" title="4/6 线性系统的根轨迹法"><img class="post_bg" src="/img/%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="4/6 线性系统的根轨迹法"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/06/15/%E8%87%AA%E6%8E%A7%E5%8E%9F%E7%90%86/4-6%20%E7%BA%BF%E6%80%A7%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%A0%B9%E8%BD%A8%E8%BF%B9%E6%B3%95/" title="4/6 线性系统的根轨迹法">4/6 线性系统的根轨迹法</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-06-15T11:44:00.000Z" title="发表于 2022-06-15 19:44:00">2022-06-15</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E3%80%8A%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86%E3%80%8B/">《自动控制原理》</a></span></div><div class="content">
+本章研究一种分析和设计线性系统的图解方法-根轨迹法。首先研究闭环零、极点和开环零、极点的关系，得到根轨迹方程；其次给出以开环增益为可变参数时绘制根轨迹的基本法则；接着又给出以非开环增益为可变参数时绘制广义根轨迹的方法，讨论如何通过根轨迹定性地分析和定量地估算系统性能；最后介绍如何应用根轨迹法设计超前、滞后和超前-滞后控制器对系统进行校正，使其满足瞬态和稳态性能要求。
+
+根轨迹法的基本概念
+根轨迹是指当系统中某个参数（如开环增益K）从零变到无穷大时，闭环特征根在s平面上移动的轨迹。
+
+在第二章中也曾介绍过，一般情况下，前向通道传递函数G(s)和反馈通道传递函数H(s)可分别表示为：
+G(s)=KG(τ1s+1)(τ22s2+2ζ1τ2s+1)⋯sν(T1s+1)(T22s2+2ζ2T2s+1)⋯=KG∗∏i=1f(s−zi)∏i=1q(s−pi)H(s)=KH∗∏j=1f(s−zj)∏j=1q(s−pj)K∗=KG∗⋅KH∗\begin{aligned}
+G(s)&amp;=\frac{K_G(\tau_1s+1)(\tau_2^2s^2+2\zeta_1\tau_2s+1)\cdot ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/06/02/%E8%87%AA%E6%8E%A7%E5%8E%9F%E7%90%86/3-6%20%E7%BA%BF%E6%80%A7%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%97%B6%E5%9F%9F%E5%88%86%E6%9E%90%E6%B3%95/" title="3/6 线性系统的时域分析法"><img class="post_bg" src="/img/%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="3/6 线性系统的时域分析法"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/06/02/%E8%87%AA%E6%8E%A7%E5%8E%9F%E7%90%86/3-6%20%E7%BA%BF%E6%80%A7%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%97%B6%E5%9F%9F%E5%88%86%E6%9E%90%E6%B3%95/" title="3/6 线性系统的时域分析法">3/6 线性系统的时域分析法</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-06-02T08:46:00.000Z" title="发表于 2022-06-02 16:46:00">2022-06-02</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E3%80%8A%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86%E3%80%8B/">《自动控制原理》</a></span></div><div class="content">
+本章主要讲述物理系统如何在时间域内进行分析和设计。系统的动态和稳态性能指标是评判系统设计好坏的标准。首先给出控制系统稳定性的定义，并讨论如何利用劳斯稳定判据进行判稳；其次对典型控制系统的时域性能指标进行定性和定量描述，分析典型一阶系统、二阶系统动态时域性能指标的近似计算方法，介绍一般控制系统的稳态精度的计算方法和补偿方法以及常用的时域校正方法等；最后以某型飞机俯仰通道控制系统为例详细介绍典型时域分析的操作步骤。
+
+引言
+由第2章的知识可以将一个物理系统抽象化，建立描述其内部物理量（或变量）之间关系的微分方程、传递函数或结构图，这就为对系统性能进行理论分析和控制系统设计提供了前提。
+由于多数控制系统是以时间作为独立变量的，所以人们往往关心该系统的状态和输出对时间的响应。对系统施加一给定输入信号，通过研究系统的时间响应来评价系统的性能，这就是控制系统的时域分析法。它根据描述系统的微分方程或传递函数，直接求解出在某种典型输入作用下系统输出随时间t变化的表达式或其他相应的描述曲线来分析系统的稳定性、动态特性和稳态特性。时域分析法是一种直接在时间域中对系统进行分析的方法，具有直观、准确的优点， ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/05/29/%E8%87%AA%E6%8E%A7%E5%8E%9F%E7%90%86/2-6%20%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%95%B0%E5%AD%A6%E6%A8%A1%E5%9E%8B%EF%BC%88%E4%B8%8B%EF%BC%89/" title="2/6 控制系统的数学模型（下）"><img class="post_bg" src="/img/%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2/6 控制系统的数学模型（下）"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/05/29/%E8%87%AA%E6%8E%A7%E5%8E%9F%E7%90%86/2-6%20%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%95%B0%E5%AD%A6%E6%A8%A1%E5%9E%8B%EF%BC%88%E4%B8%8B%EF%BC%89/" title="2/6 控制系统的数学模型（下）">2/6 控制系统的数学模型（下）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-05-29T06:24:00.000Z" title="发表于 2022-05-29 14:24:00">2022-05-29</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E3%80%8A%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86%E3%80%8B/">《自动控制原理》</a></span></div><div class="content">控制系统的复域数学模型
+
+传递函数是在对微分方程进行拉普拉斯变换基础上得到的复数域中的数学模型。传递函数不仅可以表征系统的动态特性，而且可以用来研究系统的结构或参数变化对系统性能的影响。经典控制理论中广泛应用的根轨迹法和频域法，就是以传递函数为基础建立起来的，因此，传递函数是经典控制理论中最法本也是最重要的数学模型。
+
+传递函数
+定义：注意零初始条件
+
+性质
+
+常用表示形式
+
+
+注意传递系数和系统增益的概念！
+
+极点和零点对输出的影响
+零点：传递函数分子多项式（即输出）等于0的根
+极点：传递函数分母多项式（即输入）等于0的根
+1， 极点决定了系统自由（固有）运动属性
+实数单根、实数复根、共轭复数根、复数重根会分别对应不同的形态，根据极点的种类，自由运动的模态形式将是上述几种形式的线性组合
+2， 极点位置决定了系统响应的稳定性和快速性
+(1)极点实部的负或正，决定系统是否稳定。全负则稳定，否则不稳定。
+(2)极点实部的幅值(极点距离虚轴的位置)决定系统响应的快速性。
+3， 零点决定了运动模态的比例
+零点决定了各模态在响应中所占的“比例”，因而，也就影响系统响应曲线的形状，影响系统响应的快 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/05/28/%E8%87%AA%E6%8E%A7%E5%8E%9F%E7%90%86/2-6%20%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%95%B0%E5%AD%A6%E6%A8%A1%E5%9E%8B%EF%BC%88%E4%B8%8A%EF%BC%89/" title="2/6 控制系统的数学模型（上）"><img class="post_bg" src="/img/%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2/6 控制系统的数学模型（上）"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/05/28/%E8%87%AA%E6%8E%A7%E5%8E%9F%E7%90%86/2-6%20%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%95%B0%E5%AD%A6%E6%A8%A1%E5%9E%8B%EF%BC%88%E4%B8%8A%EF%BC%89/" title="2/6 控制系统的数学模型（上）">2/6 控制系统的数学模型（上）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-05-28T02:46:00.000Z" title="发表于 2022-05-28 10:46:00">2022-05-28</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E3%80%8A%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86%E3%80%8B/">《自动控制原理》</a></span></div><div class="content">引言
+描述控制系统的输入变量、输出变量以及内部变量之间动态关系的数学表达式就称为数学模型。数学模型，是对系统进行定量分析和设计的基础。
+（1）同一系统，由于描述方法或研究方法的不同，可以采用不同的数学模型。
+（2）不同的系统也可以由完全相同的数学模型来表示。
+建立数学模型可以通过：
+
+分析法：分析系统各部分的运动机理，根据它们依据的物理规律、化学规律等列些运动方程。
+实验法：实验法所建立的模型未必能描述系统内部的运行机理，但能描述输入量与输出量之间的动态关系。 这也称为系统辨识方法。
+
+人为地给系统输入端施加某种测试信号，记录其输出响应；
+根据记录的输入、输出数据，用适当的数学模型去逼近黑箱，从而建立数学模型。
+
+
+
+时域数学模型（微分方程）
+控制系统的微分方程
+用解析法列写微分方程的一般步骤：
+
+根据系统或元件的具体工作情况，确定系统或元件的输入、输出变量.
+从输入端开始.按照信号的传递顺序，依据各变量所遵循的物理（或化学）规律.列写出系统各元部件的动态方程，一般为微分方程组。
+消去中间变量.写出输入、输出变量的微分方程。
+将微分方程标准化，即将与输入有关的各项放在等号右侧，与输出有 ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/#content-inner">5</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/JLLJ.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">ClancyCC</div><div class="author-info__description">尝试热爱生活！</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">44</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/ClancyCC" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://www.zhihu.com/people/zhu-qing-cheng" target="_blank" title="zhihu"><i class="fab fa-zhihu"></i></a><a class="social-icon" href="mailto:zqc867342167@gmail.com" target="_blank" title="Email:zqc867342167@gmail.com"><i class="fas fa-envelope"></i></a></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/07/16/%E5%8A%A8%E6%89%8B%E5%AD%A6%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/gpu%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/" title="gpu的安装和使用"><img src="/img/DIVE%20INTO%20DEEP%20LEARNING.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="gpu的安装和使用"/></a><div class="content"><a class="title" href="/2022/07/16/%E5%8A%A8%E6%89%8B%E5%AD%A6%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/gpu%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/" title="gpu的安装和使用">gpu的安装和使用</a><time datetime="2022-07-17T02:47:34.025Z" title="更新于 2022-07-17 10:47:34">2022-07-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/07/02/%E5%8A%A8%E6%89%8B%E5%AD%A6%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%8A%A8%E6%89%8B%E5%AD%A6%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A02/" title="动手学深度学习2"><img src="/img/DIVE%20INTO%20DEEP%20LEARNING.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="动手学深度学习2"/></a><div class="content"><a class="title" href="/2022/07/02/%E5%8A%A8%E6%89%8B%E5%AD%A6%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%8A%A8%E6%89%8B%E5%AD%A6%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A02/" title="动手学深度学习2">动手学深度学习2</a><time datetime="2022-07-16T11:21:41.159Z" title="更新于 2022-07-16 19:21:41">2022-07-16</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E3%80%8A%E5%8A%A8%E6%89%8B%E5%AD%A6%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E3%80%8B/"><span class="card-category-list-name">《动手学深度学习》</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E3%80%8A%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E3%80%8B/"><span class="card-category-list-name">《数据结构与算法》</span><span class="card-category-list-count">12</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E3%80%8A%E6%B6%B2%E4%BD%93%E7%81%AB%E7%AE%AD%E5%8F%91%E5%8A%A8%E6%9C%BA%E8%AE%BE%E8%AE%A1%E3%80%8B/"><span class="card-category-list-name">《液体火箭发动机设计》</span><span class="card-category-list-count">9</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E3%80%8A%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86%E3%80%8B/"><span class="card-category-list-name">《自动控制原理》</span><span class="card-category-list-count">8</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E3%80%8B/"><span class="card-category-list-name">《计算机组成原理》</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E4%BA%BA%E7%94%9F%E6%98%AF%E4%BB%80%E4%B9%88/"><span class="card-category-list-name">人生是什么</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%8A%80%E6%9C%AF%E4%B8%8E%E6%8A%80%E5%B7%A7/"><span class="card-category-list-name">技术与技巧</span><span class="card-category-list-count">5</span></a></li>
+            </ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">44</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2022-01-16T16:00:00.000Z"></div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2022-08-30T02:52:12.374Z"></div></div></div></div></div></div></main><footer id="footer" style="background: transparent"><div id="footer-wrap"><div class="copyright">&copy;2022 By ClancyCC</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="chat_btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/pluginsSrc/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function subtitleType () {
+  if (true) { 
+    window.typed = new Typed("#subtitle", {
+      strings: ["登黄山天下无山，观止矣","你得要学会热爱生活才行！"],
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50
+    })
+  } else {
+    document.getElementById("subtitle").innerHTML = '登黄山天下无山，观止矣'
+  }
+}
+
+if (true) {
+  if (typeof Typed === 'function') {
+    subtitleType()
+  } else {
+    getScript('/pluginsSrc/typed.js/lib/typed.min.js').then(subtitleType)
+  }
+} else {
+  subtitleType()
+}</script></div><script src="/pluginsSrc/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = false;
+POWERMODE.shake = false;
+POWERMODE.mobile = true;
+document.body.addEventListener('input', POWERMODE);
+</script><script src="//code.tidio.co/qq2vbwkt5or4kfzsneq1etvxxeemubrw.js" async="async"></script><script>function onTidioChatApiReady() {
+  window.tidioChatApi.hide();
+  window.tidioChatApi.on("close", function() {
+    window.tidioChatApi.hide();
+  });
+}
+if (window.tidioChatApi) {
+  window.tidioChatApi.on("ready", onTidioChatApiReady);
+} else {
+  document.addEventListener("tidioChat-ready", onTidioChatApiReady);
+}
+
+var chatBtnFn = () => {
+  document.getElementById("chat_btn").addEventListener("click", function(){
+    window.tidioChatApi.show();
+    window.tidioChatApi.open();
+  });
+}
+chatBtnFn()
+</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start -->
+  <script data-pjax src="js/githubcalendar.js"></script>
+  <script data-pjax>
+        function GithubCalendarConfig(){
+            var git_githubapiurl ="https://python-github-calendar-api.vercel.app/api?ClancyCC";
+            var git_color =['#ebedf0', '#f1f8ff', '#dbedff', '#c8e1ff', '#79b8ff', '#2188ff', '#0366d6', '#005cc5', '#044289', '#032f62', '#05264c'];
+            var git_user ="ClancyCC";
+            var parent_div_git = document.getElementById('recent-posts');
+            var git_div_html = '<div class="recent-post-item" style="width:100%;height:auto;padding:10px;"><div id="github_loading" style="width:10%;height:100%;margin:0 auto;display: block"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animateTransform></path></svg></div><div id="github_container"></div></div>';
+            if(parent_div_git && location.pathname =='/'){
+                console.log('已挂载github calendar')
+                // parent_div_git.innerHTML=git_div_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
+                parent_div_git.insertAdjacentHTML("afterbegin",git_div_html) // 有报错，但不影响使用(支持pjax跳转)
+            };
+            GithubCalendar(git_githubapiurl,git_color,git_user)
+        }
+        if(document.getElementById('recent-posts')){
+            GithubCalendarConfig()
+        }
+    </script>
+    <style>#github_container{min-height:280px}@media screen and (max-width:650px) {#github_container{background-image:;min-height:0px}}</style>
+    <style></style><!-- hexo injector body_end end --></body></html>

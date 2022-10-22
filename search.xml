@@ -4,6 +4,44 @@
   
     
     <entry>
+      <title>基于模糊故障树的发动机失效模式分析</title>
+      <link href="/2022/10/21/Bibliography/221021/"/>
+      <url>/2022/10/21/Bibliography/221021/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>侯金丽，基于模糊故障树的可重复使用火箭发动机失效模式分析[D]，北京航空航天大学，2012.<br>原文链接: 无</p></blockquote><h1>文章思路</h1><h2 id="🔺Chapter-1-2">🔺Chapter 1-2</h2><p>故障树分析法就是在系统设计过程中，通过对可能造成系统故障的各种因素(包括硬件、软件、环境、人为因素等)进行分析，画出逻辑框图(即故障树)，从而确定系统故障原因的各种可能组合及其发生概率，以计算系统故障概率，采取相应的纠正措施，提高系统可靠性的一种设计分析方法。<br>模糊故障树分析(Fuzzy Fault Tree Analysis，简称 FFTA)针对故障树分析法中底事件和顶事件发生概率的不确定性问题，采用模糊概率取代传统可靠性分析中精确的概率值，并根据模糊数学中的扩张原理，将系统中每一个底事件的失效模糊概率用梯形模糊数来描述，模糊数之间的乘积运算采用近似处理，然后在传统重要度的基础上定义一个函数来刻画每一底事件对顶事件发生的贡献，从而确定底事件的模糊重要程度。</p><p>故障树的分析步骤:</p><ol><li>选择顶事件，理清故障结果和故障原因之间的关系；</li><li>明确各个底事件的精确概率，没有精确概率的采用模糊概率；</li><li>概率值转化为三角/梯形模糊数；</li><li>定性分析得到最小割集；</li><li>计算底事件的模糊重要度；</li><li>对计算结果分析，获得结论</li></ol><h2 id="🔺Chapter-3">🔺Chapter 3</h2><h3 id="3-1">3-1</h3><p>以主燃烧室故障概率为例，可以得到故障树和发生的模糊概率如下：<br><img src="1.jpg" alt="主燃烧室故障树"><br><img src="2.jpg" alt="主燃烧室故障树底事件发生的模糊概率"></p><p>计算由顶事件模糊概率公式及三角模糊数可算得顶事件的模糊概率为：<br>F(t)=[ 5.81E-04+6.40E-05λ，7.10E-04-6.5E-05λ]<br>顶事件发生故障概率区间为5.81E-04~7.10E-04，最可能发生故障的概率为6.45E-04。<br>综合所有部件的所有底事件之后，就可以求出顶事件的故障概率（即整个系统的可靠性，是一个范围）。把各个底事件的发生概率除以顶事件的发生概率再乘以概率重要度就可以得到底事件的关键重要度，对此进行排序可以明确系统中容易发生故障的组件和主要故障原因。<br>为简化建树及定性、定量分析的繁琐工作，本文开发一款计算机辅助建树软件，实现故障树最小割集的自动计算和快速定量分析，节省了大量计算资源和时间。</p><h3 id="3-2">3-2</h3><p>系统的故障征兆和故障原因是存在因果关系的，本文就用模糊诊断矩阵来建立它们之间的关系，把故障征兆向量乘以模糊诊断矩阵就可以得到故障原因向量，进而分析一个顶事件发生在各个故障原因上的分布。<br>文中把记模糊矩阵为R，其中第k行第j列的元素记作<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>I</mi><mrow><mi>k</mi><mi>j</mi></mrow><mrow><mi>F</mi><mi>V</mi></mrow></msubsup></mrow><annotation encoding="application/x-tex">I_{kj}^{FV}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.2605em;vertical-align:-0.4192em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8413em;"><span style="top:-2.4169em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">kj</span></span></span></span><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.13889em;">F</span><span class="mord mathnormal mtight" style="margin-right:0.22222em;">V</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.4192em;"><span></span></span></span></span></span></span></span></span></span>。可以把<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mrow><mi>k</mi><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">I_{kj}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9694em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">kj</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span>理解为当第k个故障征兆（即现象）发生的原因是第j个原因的“概率”，但是这个“概率”实际上使用FV重要度表示的。<br>例如推力室故障中，可能的四个征兆依次是无推力、推力异常、温度异常、起火；故障原因有四个依次是主喷注器故障、喷管故障、泄露、燃烧室身部故障。<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>I</mi><mn>13</mn><mrow><mi>F</mi><mi>V</mi></mrow></msubsup></mrow><annotation encoding="application/x-tex">I_{13}^{FV}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0894em;vertical-align:-0.2481em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8413em;"><span style="top:-2.4519em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">13</span></span></span></span><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.13889em;">F</span><span class="mord mathnormal mtight" style="margin-right:0.22222em;">V</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2481em;"><span></span></span></span></span></span></span></span></span></span>是出现无推力的现象时泄露导致的“概率”（FV重要度）。<br>至于FV重要度的定义，可以直接由公式（3.7）和（3.8）表示。</p><h2 id="🔺Chapter-4">🔺Chapter 4</h2><p>因为可重复使用火箭发动机系统在实际上会呈现出很多状态而不是只有二态，所以本文引入了多态系统故障树，就可以关注到二态故障树容易忽略的安全隐患。<br>尽管不能完全理解长篇的公式推导，但是可以确定的是，这种多态系统故障树是想解释非独立组件之间的偶尔关系处理方法，从而直观地评价耦合关系对组件、系统失效概率的影响程度。例如涡轮泵故障率增大预燃室的故障率也增大，但是预燃室故障率增大涡轮泵却不变。这种“不互相依赖”的关系可以在多态系统故障树之中得到体现。<br>在明确组件的耦合关系式后，当组件失效发生变化时，系统故障率的变化率会明显放大，这在精确预估系统故障率时需要得到高度重视。</p><h2 id="🔺Chapter-5-6">🔺Chapter 5-6</h2><p>此外，原文粗略统计了 SSME 各主要组件发生故障的部件、失效模式、故障原因、危险等级及相应的改进方法建议，这是基于故障树和多态系统共同分析得到的结果。<br>由于仅靠故障树和多态系统还并不能建立一套完整的系统失效模式评估体系，因此引入了因子化排序方法。它综合考虑了影响发动机可靠性的风险因子、时间因子和概率因子，用假定的公式把各种失效模式的影响程度量化了。因此可以排序，可以和纯概率分析的结果对比，就能实现更加全面的评估。</p><h1>总结</h1><ol><li>结合故障树和模糊理论建立模糊故障树，并罗列一大部分组件和系统的故障—危险-原因-建议；</li><li>引入多态系统解释耦合关系，更好地分析系统可靠性；</li><li>引入因子化排序方法，全面且体系化；</li><li>开发了一款分析软件，能完成故障树的建立与分析工作。</li></ol><style>    p img{        border: solid lightblue 1px;    }</style>]]></content>
+      
+      
+      <categories>
+          
+          <category> bibliography </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>夹芯梁寿命预估模型</title>
+      <link href="/2022/10/20/Bibliography/221020/"/>
+      <url>/2022/10/20/Bibliography/221020/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>Dai X, Ray A. Damage-mitigating control of a reusable rocket engine: part I—Life prediction of the main thrust chamber wall[J]. 1996.<br>可重复使用火箭发动机的损伤缓和控制：第一部分——主推力室壁的寿命预测（即夹芯梁模型的原文）<br>原文链接: <a href="https://doi.org/10.1115/1.2801159">https://doi.org/10.1115/1.2801159</a></p></blockquote><h2 id="文章思路">文章思路</h2><p>原文共有两部分，主思路是要通过结构材料的热力学行为来预测损伤和分析动力学行为（即Part 1本文的内容），然后利用这种预测方法来研究出一种可以帮助决策和控制的算法来降低火箭发动机的损伤（即Part 2的内容）。<br>这篇文章就是要利用夹芯梁模型和粘塑性理论来模拟横肋（ligament，即冷却液正下方的一小部分内壁）部分鼓起和变薄的现象，最终达到预测损伤（寿命）的目的。</p><h2 id="实现过程">实现过程</h2><p><img src="1.jpg" alt="Sandwich beam model of the coolant channel ligament"><br>公式推导的过程比较复杂，这里简述过程。首先，夹芯梁模型认为，应变是由弹性应变、塑性应变和热膨胀应变三部分组成的，但在中面（mid-plane）上的总应变是由位移导致的应变和挠度导致的曲率之和。因此结合力的平衡方程、本构方程和边界条件可以得到挠度关于时间的表达式，其中有可逆项和非可逆项。<br><img src="2.jpg" alt="上述过程中的杂糅的从压力到最终挠度的过程"></p><p>最终，基于变形前后体积不变的假设，横肋变薄的数值由挠度表达式中不可逆的分项来表示，是关于时间的函数。再结合定义的损伤函数，最终的寿命也是关于时间的函数。</p><h2 id="论文结果">论文结果</h2><p><img src="3.jpg" alt="Average cyclic hoop stress/strain profile"><br>图6显示了从第2个周期到第20个周期横肋中心的环向应力和机械应变。图6（a）（b）中横轴的时间范围即一个循环的时间长度，应力分布在两个或三个瞬态循环后几乎保持不变，而应变几乎以恒定的增量增长（这种恒定也可以在图6（c）中体现）。随着循环的继续，由于应变棘轮效应，即使在循环的热阶段，非弹性应变也会变为拉伸。<br>图7展示了循环过程中的挠度和弯矩变化，尤其是弯矩变化十分直观得展现出了横肋的变形情况。<br><img src="4.jpg" alt="Deflection and bending moment"><br>图8把夹芯梁模型和有限元分析的变薄量结果作对比，二者的贴合程度较好。但在寿命计算上前者是250次，后者是220次。论文认为误差主要体现在夹芯梁模型没有考虑局部应力集中、环境/腐蚀效应、预先存在的材料缺陷以及低周疲劳效应。<br><img src="5.jpg" alt="Normalize thinning"></p><h2 id="模型优点">模型优点</h2><ol><li>模型具有显式的解析表达式，计算效率高，消耗算力少。</li><li>该模型不一定要从起点（初次使用）开始计算，可以直接从某一个时刻开始。</li></ol><style>    p img{        border: solid lightblue 1px;    }</style>]]></content>
+      
+      
+      <categories>
+          
+          <category> bibliography </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>gpu的安装和使用</title>
       <link href="/2022/07/16/d2l/gpu%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/"/>
       <url>/2022/07/16/d2l/gpu%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8/</url>

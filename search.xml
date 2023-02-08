@@ -4,11 +4,30 @@
   
     
     <entry>
+      <title>塑性力学</title>
+      <link href="/2023/02/08/Menchanics/Plastic/"/>
+      <url>/2023/02/08/Menchanics/Plastic/</url>
+      
+        <content type="html"><![CDATA[<p><code>教材</code>：尚福林.塑性力学基础  第2版[M].西安交通大学出版社.2015.pdf</p><div class="row">    <embed src="塑性力学.pdf" width="100%" height="550" type="application/pdf"></div><style>    div.row embed{        height: 900px;    }</style>]]></content>
+      
+      
+      <categories>
+          
+          <category> 力学 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>疲劳力学</title>
       <link href="/2022/11/26/Menchanics/Fatigue/"/>
       <url>/2022/11/26/Menchanics/Fatigue/</url>
       
-        <content type="html"><![CDATA[<p><code>教材</code>：杨新华,陈传尧.疲劳与断裂（第二版）[M].华中科技大学出版社.2018.</p><div class="row">    <embed src="疲劳力学.pdf" width="100%" height="550" type="application/pdf"></div>]]></content>
+        <content type="html"><![CDATA[<p><code>教材</code>：杨新华,陈传尧.疲劳与断裂（第二版）[M].华中科技大学出版社.2018.</p><div class="row">    <embed src="疲劳力学.pdf" width="100%" height="550" type="application/pdf"></div><style>    div.row embed{        height: 900px;    }</style>]]></content>
       
       
       <categories>
